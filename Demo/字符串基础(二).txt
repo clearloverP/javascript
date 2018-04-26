@@ -1,0 +1,74 @@
+# 字符串操作（二）
+## 1、length
+
+获取字符串的长度
+
+```
+var str = "hello world";
+console.log(str.length);
+```
+效果如下图所示：<br> 
+![](https://github.com/clearloverP/javascript/blob/master/Demo/pics/string_length.png)
+
+## 2、索引
+
+通过下标获取字符串指定位置的字符，但是不能改变该索引对应的值
+======
+
+```
+var str = "hello world"
+console.log(str[0]); 
+
+str[0] = "H";
+console.log(str);
+```
+效果如下图所示：<br>
+![](https://github.com/clearloverP/javascript/blob/master/Demo/pics/index.png)
+
+
+## 3、toUpperCase
+
+将字符串全部转为大写，并返回原字符串不变
+
+```
+var str = "hello world";
+console.log(str.toUpperCase());
+
+console.log(str);
+```
+效果如下图所示：<br>
+![](https://github.com/clearloverP/javascript/blob/master/Demo/pics/toUpper.png)
+
+
+
+## 4、toLowerCase
+
+将字符串全部转为小写，并返回原字符串不变
+
+```
+var str = "heLLo worlD";
+console.log(str.toLowerCase());
+
+console.log(str);
+```
+效果如下图所示：<br>
+![](https://github.com/clearloverP/javascript/blob/master/Demo/pics/tolower.png)
+
+
+
+## 5、indexOf
+
+搜索指定字符串出现的位置，接收两个参数，第一个参数表示从哪个位置开始查找元素，第二个参数表示要查找的位置，若找到则返回对应元素所在的位置，否则返回-1，从0开始计数
+
+```
+var s = 'hello world!';
+console.log(s.indexOf('world'));
+console.log(s.indexOf('World'));
+console.log(s.indexOf('o'));
+console.log(s.indexOf('o',6));
+```
+效果如下图所示：<br>
+![](https://github.com/clearloverP/javascript/blob/master/Demo/pics/indexOf.png)
+
+
+
