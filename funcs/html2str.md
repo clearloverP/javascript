@@ -17,7 +17,7 @@
 </html>
 ```
 ### 开发者工具效果,如下图所示:
-
+![](https://github.com/clearloverP/javascript/blob/master/Demo/pics/old.jpg) 
 
 ## 解决方案，定义简单函数如下：
 ```
@@ -54,4 +54,4 @@ $("#admin").html(html2str("<tT"));
 ```
 
 ### 最终效果如下：
-
+![](https://github.com/clearloverP/javascript/blob/master/Demo/pics/new.jpg) 
