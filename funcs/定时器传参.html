@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+		var timer1 = null;
+		function loadInfo(nodeip, onlineType) {
+			if (timer1) {
+				clearInterval(timer1);
+			}
+
+			var a1 = 'admin',
+				a2 = 'admin123',
+				a3 = 'adminvsc',
+				a4 = 'adminandvsc';
+
+			setLoadInfo(a1, a2, a3, a4, nodeip, onlineType);
+
+			// timer1 = setInterval(getUnNamedFunc(a1, a2, a3, a4, nodeip, onlineType), 5000);
+			
+			// timer1 = setInterval(function() {
+			// 	setLoadInfo(a1, a2, a3, a4, nodeip, onlineType);
+			// }, 5000);
+		}
+
+		function setLoadInfo(para1, para2, para3, para4, nodeip, onlineType) {
+			return console.log(para1 + ", haha " + para2 + " heihei; " + para3 + " piupiupiu: " + para4 + "; www:ip " + nodeip + "; haiyou: " + onlineType);
+		}
+
+		function getUnNamedFunc(para1, para2, para3, para4, nodeip, onlineType) {
+			return function() {
+				setLoadInfo(para1, para2, para3, para4, nodeip, onlineType)
+			}
+		}
+
+		// loadInfo(1, 0);
+		loadInfo(11, 10);
+	</script>
+</body>
+</html>
