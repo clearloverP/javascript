@@ -13,9 +13,9 @@
   
 ```
 
-name | IE6 IE7 IE8 | Firefox Chrome Safari | Opera
-:-: | :-: | :-: | :-: | :-:
-navigator.language | undefined | zh-CN | zh-CN  
-navigator.userLanguage | zh-cn | undefined | zh-cn 
-navigator.browserLanguage | zh-cn | undefined | zh-cn 
-navigator.systemLanguage | zh-cn | undefined | undefined 
+name | IE6\IE7\IE8 |  Firefox\Chrome\Safari | Opera 
+-|-|-|-
+navigator.language | undefined | zh-CN | zh-CN |
+navigator.userLanguage | zh-cn | undefined | zh-cn |
+navigator.browserLanguage | zh-cn | undefined | zh-cn |
+navigator.systemLanguage | zh-cn | undefined | undefined |
