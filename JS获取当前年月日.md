@@ -1,5 +1,3 @@
-一下调用时默认时间设置为：2019-08-01 08：08：21
-
 ## 1、获取当前月份
 ```
 function handleMonth() {
@@ -59,7 +57,7 @@ handleMonth();        // "08"
   addZero(2);     // 2
 ```
 
-## 4、获取当前月日
+## 4、获取当前年月日
 ```
   // separator为间隔符，String类型，默认为'-'
   function getYMD(separator='-') {
@@ -79,10 +77,38 @@ handleMonth();        // "08"
   }
   
   getYMD();           // 2019-07-31
+  
+  // 或者可以用如下方式：
+  let a = new Date().toLocaleDateString();      // 2019-07-31
+  a = a.replace(/\//g, '-');
+  console.log(a);
 ```
 
+## 5、获取当前时间戳（精确到毫秒）
+```
+// 方法一：
+var timestamp = (new Date()).valueOf();
 
+// 方法二：
+var timestamp = new Date().getTime();
+```
 
+## 6、将时间戳转换成日期格式
+```
+// 方法一：
+function getLocalTime(nS) {     
+    return new Date(parseInt(nS) * 1000).toLocaleString().substr(0,17)
+}
+
+console.log(getLocalTime(new Date().getTime() / 1000));       // 2019/7/31 下午3:25:14
+
+// 方法二：
+function getLocalTime(nS) {     
+    return new Date(parseInt(nS) * 1000).toLocaleString().replace(/年|月/g, "-").replace(/日/g, " ");      
+} 
+
+console.log(getLocalTime(new Date().getTime() / 1000));       // 2019/7/31 下午3:25:14
+```
 
 
 
